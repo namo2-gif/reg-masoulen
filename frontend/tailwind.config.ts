@@ -10,6 +10,7 @@ export default {
       fontFamily: {
         gothic: ['Cinzel', 'serif'],
         serif: ['"EB Garamond"', '"Cormorant Garamond"', 'Georgia', 'serif'],
+        noir: ['Cinzel', '"EB Garamond"', 'Georgia', 'serif'],
       },
       colors: {
         // Gothic murder-mystery crime-board palette
@@ -59,8 +60,25 @@ export default {
           },
         },
       },
-      fontFamily: {
-        noir: ["'Georgia'", "'Times New Roman'", 'serif'],
+      boxShadow: {
+        'glow-red-sm': '0 0 8px rgba(229, 26, 36, 0.5)',
+        'glow-red': '0 0 16px rgba(229, 26, 36, 0.65)',
+        'glow-red-lg': '0 0 30px rgba(229, 26, 36, 0.85)',
+        'polaroid': '0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 8px 10px -6px rgba(0, 0, 0, 0.4)',
+      },
+      dropShadow: {
+        'glow-red': '0 0 10px rgba(229, 26, 36, 0.75)',
+        'glow-red-lg': '0 0 20px rgba(229, 26, 36, 0.9)',
+      },
+      animation: {
+        'slow-spin': 'spin 120s linear infinite',
+        'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+      },
+      keyframes: {
+        pulseGlow: {
+          '0%, 100%': { boxShadow: '0 0 12px rgba(229, 26, 36, 0.5)' },
+          '50%': { boxShadow: '0 0 24px rgba(229, 26, 36, 0.9)' },
+        },
       },
       boxShadow: {
         'glow-red-sm': '0 0 8px rgba(229, 26, 36, 0.5)',
